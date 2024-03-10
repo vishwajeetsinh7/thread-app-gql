@@ -19,6 +19,7 @@ const gqlServer = new ApolloServer({
         hello: String, 
         say(name: String): String
     }`, 
+    // resolvers 
     resolvers: {
         Query: { 
             hello: () => `Hey there, I am gq server`, 
